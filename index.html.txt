@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Gui</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Página Inicial -->
+  <section id="home">
+    <img src="https://via.placeholder.com/150" alt="Sua Foto" class="profile-image">
+    <button id="know-more">Me Conheça Melhor</button>
+  </section>
+
+  <!-- Carrossel -->
+  <section id="carousel" class="hidden">
+    <div class="slides">
+      <div class="slide" data-target="about">
+        <img src="https://via.placeholder.com/800x400" alt="Sobre Mim">
+        <button class="slide-button">Leia Sobre Mim</button>
+      </div>
+      <div class="slide" data-target="projects">
+        <img src="https://via.placeholder.com/800x400" alt="Projetos">
+        <button class="slide-button">Ver Projetos</button>
+      </div>
+      <div class="slide" data-target="experience">
+        <img src="https://via.placeholder.com/800x400" alt="Experiências">
+        <button class="slide-button">Explorar Experiências</button>
+      </div>
+    </div>
+    <button class="carousel-button prev">&#10094;</button>
+    <button class="carousel-button next">&#10095;</button>
+  </section>
+
+  <!-- Páginas de Conteúdo -->
+  <section id="about" class="hidden content-page">
+    <h2>Sobre Mim</h2>
+    <p>Texto sobre sua experiência, formação e habilidades...</p>
+    <a href="#home">Voltar ao Início</a>
+  </section>
+
+  <section id="projects" class="hidden content-page">
+    <h2>Projetos</h2>
+    <p>Lista de projetos com descrições e links...</p>
+    <a href="#home">Voltar ao Início</a>
+  </section>
+
+  <section id="experience" class="hidden content-page">
+    <h2>Experiências</h2>
+    <p>Histórico profissional e responsabilidades...</p>
+    <a href="#home">Voltar ao Início</a>
+  </section>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
